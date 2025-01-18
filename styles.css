@@ -26,10 +26,10 @@ nav {
 
 nav h3 {
     color: #2C3568;
-    font-size: 24px;
-    font-weight: bold;
-    font-style: italic;
+    font-size: 25px;
+    font-weight: 900;
     letter-spacing: 2px;
+    font-style: italic;
 }
 
 nav span {
@@ -38,17 +38,21 @@ nav span {
 
 nav ul {
     display: flex;
+    flex-wrap: wrap;
     gap: 15px;
-    list-style: none;
+}
+
+nav ul li {
+    list-style-type: none;
 }
 
 nav ul li a {
     text-decoration: none;
     color: #FCFFE7;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
     transition: color 0.3s, background-color 0.3s;
-    padding: 5px 10px;
+    padding: 10px 20px;
     border-radius: 20px;
 }
 
@@ -61,9 +65,9 @@ nav ul li a:hover {
     text-decoration: none;
     color: #FCFFE7;
     background-color: #2C3568;
-    padding: 8px 15px;
+    padding: 10px 20px;
     border-radius: 20px;
-    font-size: 16px;
+    font-size: 20px;
     font-weight: bold;
     transition: color 0.3s, background-color 0.3s;
 }
@@ -77,10 +81,10 @@ nav ul li a:hover {
     background-color: #FCFFE7;
     text-align: center;
     border-radius: 20px;
-    padding: 30px;
-    max-width: 400px;
+    padding: 40px;
+    max-width: 500px;
     margin: auto;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    box-shadow: 10px 7px 5px rgba(0, 0, 0, 0.15);
     position: absolute;
     top: 20%;
     left: 50%;
@@ -89,82 +93,83 @@ nav ul li a:hover {
 
 .text-content h2 {
     color: #2C3568;
-    font-size: 22px;
-    margin-bottom: 10px;
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 20px;
 }
 
 .text-content p {
-    font-size: 16px;
+    font-size: 20px;
     line-height: 1.6;
-    font-weight: 500;
+    font-weight: 700;
 }
 
 .man-pic {
     position: absolute;
     right: 10%;
     top: 30%;
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
 }
 
 /* Services Section */
 .services {
-    padding: 80px 20px;
-    background-color: #f9f9f9;
+    padding: 100px 20px 80px;
 }
 
 .title {
     text-align: center;
-    font-size: 36px;
-    margin-bottom: 20px;
+    font-size: 55px;
+    margin-bottom: 30px;
 }
 
 .title::before {
     content: "";
     display: block;
-    width: 50px;
-    height: 4px;
+    width: 50%;
+    height: 7px;
     background-color: #BAD7E9;
-    margin: 10px auto;
-    border-radius: 2px;
+    margin: 0 auto;
+    border-radius: 20px;
+    transition: width 0.5s ease-in-out;
 }
 
 .box {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
     justify-content: center;
+    gap: 20px;
 }
 
 .card {
     background-color: #2C3568;
-    max-width: 300px;
+    max-width: 400px;
     width: 100%;
     padding: 20px;
-    border-radius: 10px;
+    border-radius: 20px;
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: box-shadow 0.3s;
 }
 
 .card:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .card i {
-    font-size: 36px;
-    margin-bottom: 15px;
+    font-size: 30px;
     color: #EB455F;
+    margin-bottom: 15px;
 }
 
 .card h3 {
-    font-size: 18px;
     color: #EB455F;
+    font-size: 20px;
+    font-weight: bold;
     margin-bottom: 10px;
 }
 
 .card p {
-    font-size: 14px;
+    font-size: 18px;
     color: #FCFFE7;
     line-height: 1.6;
 }
@@ -172,86 +177,97 @@ nav ul li a:hover {
 /* About Section */
 .about {
     background-color: #2C3568;
-    padding: 60px 20px;
-    border-radius: 10px;
+    padding: 50px 20px;
+    border-radius: 20px;
     color: #FCFFE7;
     text-align: center;
 }
 
 .container img {
     max-width: 100%;
-    margin-bottom: 20px;
+    margin: 20px 0;
     border-radius: 10px;
 }
 
 .container p {
-    font-size: 18px;
-    line-height: 1.8;
+    font-size: 25px;
+    line-height: 2;
+    text-transform: capitalize;
 }
 
 .container span {
+    font-size: 35px;
+    font-weight: 900;
     color: #EB455F;
-    font-size: 22px;
-    font-weight: bold;
 }
 
 /* Contact Section */
 .contact {
     background-color: #2B3467;
     padding: 50px 20px;
-    color: #FCFFE7;
-    text-align: center;
 }
 
 .contact-container p {
-    font-size: 18px;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 900;
+    color: #FCFFE7;
     margin-bottom: 20px;
 }
 
 .social-icons-container {
+    background-color: #BAD7E9;
+    max-width: 700px;
+    margin: 20px auto;
     display: flex;
     justify-content: center;
+    padding: 20px;
+    border-radius: 20px;
     gap: 20px;
 }
 
-.social-icons-container a i {
-    font-size: 36px;
-    color: #FCFFE7;
-    transition: transform 0.3s, color 0.3s;
+.social-icons-container i {
+    font-size: 60px;
+    transition: transform 0.3s;
 }
 
-.social-icons-container a i:hover {
+.social-icons-container i:hover {
     transform: rotate(360deg);
-    color: #EB455F;
 }
 
-/* Responsive Design */
+.social-icons-container a:nth-child(1) i { color: dodgerblue; }
+.social-icons-container a:nth-child(2) i { color: #EB455F; }
+.social-icons-container a:nth-child(3) i { color: limegreen; }
+.social-icons-container a:nth-child(4) i { color: blueviolet; }
+
+/* Media Queries */
 @media (max-width: 768px) {
     nav ul {
         flex-direction: column;
-        align-items: center;
+        gap: 10px;
     }
 
     .text-content {
-        width: 90%;
         padding: 20px;
     }
 
     .box {
         flex-direction: column;
-    }
-
-    .card {
-        margin-bottom: 20px;
+        gap: 20px;
     }
 
     .man-pic {
+        max-width: 300px;
         right: 5%;
-        max-width: 200px;
     }
 
     .title {
-        font-size: 28px;
+        font-size: 40px;
+    }
+
+    .social-icons-container {
+        flex-wrap: wrap;
+        gap: 15px;
     }
 }
 
@@ -261,22 +277,34 @@ nav ul li a:hover {
     }
 
     .text-content h2 {
-        font-size: 18px;
+        font-size: 20px;
     }
 
     .text-content p {
-        font-size: 14px;
+        font-size: 18px;
     }
 
     .card h3 {
-        font-size: 16px;
+        font-size: 18px;
     }
 
     .card p {
-        font-size: 14px;
+        font-size: 16px;
     }
 
-    .social-icons-container a i {
-        font-size: 24px;
+    .container p {
+        font-size: 20px;
+    }
+
+    .container span {
+        font-size: 25px;
+    }
+
+    .contact-container p {
+        font-size: 18px;
+    }
+
+    .social-icons-container i {
+        font-size: 40px;
     }
 }
