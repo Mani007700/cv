@@ -89,6 +89,28 @@
     <a href="#" class="back-to-top" title="Go to top">
     &#x25B2;
     </a>
+    <script>
+    // Show/hide back-to-top button
+    const backToTopButton = document.querySelector('.back-to-top');
+
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 200) { // Adjust visibility threshold as needed
+            backToTopButton.classList.add('show');
+        } else {
+            backToTopButton.classList.remove('show');
+        }
+    });
+
+    // Smooth scroll to top
+    backToTopButton.addEventListener('click', (e) => {
+        e.preventDefault();
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    });
+</script>
+
 
 </body>
 </html>
